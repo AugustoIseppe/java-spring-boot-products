@@ -115,7 +115,7 @@ A API segue os padrões RESTful. Abaixo estão alguns exemplos de endpoints (sub
 
 ## 🤝 Como Contribuir
 
-Contribuições são bem-vindas! Se você encontrar algum bug ou tiver sugestões de melhorias, sinta-se à vontade para abrir uma *issue* ou enviar um *pull request*. ✨
+Se você encontrar algum bug ou tiver sugestões de melhorias, basta abrir uma *issue* ou enviar um *pull request*. ✨
 
 1.  Faça um *fork* do projeto.
 2.  Crie uma nova *branch* (`git checkout -b feature/sua-feature`).
@@ -125,7 +125,7 @@ Contribuições são bem-vindas! Se você encontrar algum bug ou tiver sugestõe
 
 ## 👨‍💻 Desenvolvedor
 
-Desenvolvido com ❤️ por [Augusto Iseppe]!
+Desenvolvido por [Augusto Iseppe]!
 
 *   **LinkedIn:** [https://www.linkedin.com/in/augusto-iseppe-37a084286/] 🔗
 *   **GitHub:** [https://github.com/AugustoIseppe] 🐙
