@@ -26,6 +26,12 @@ public class CategoryController {
         return ResponseEntity.created(uri).body(categoryDTO);
     }
 
+    @PutMapping(value = "/{uuid}")
+    public ResponseEntity<CategoryDTO> update(@PathVariable UUID uuid, @Valid @RequestBody CategoryDTO categoryDTO) {
+        categoryDTO = categoryService.update(uuid, categoryDTO);
+        return ResponseEntity.ok(categoryDTO);
+    }
+
     @GetMapping
     public ResponseEntity<List<CategoryDTO>> findAll() {
         List<CategoryDTO> result = categoryService.findAll();
