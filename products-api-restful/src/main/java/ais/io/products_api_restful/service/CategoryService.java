@@ -5,6 +5,7 @@ import ais.io.products_api_restful.entity.Category;
 import ais.io.products_api_restful.repository.CategoryRepository;
 import ais.io.products_api_restful.service.exceptions.DatabaseException;
 import ais.io.products_api_restful.service.exceptions.ResourceNotFoundException;
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -28,6 +29,22 @@ public class CategoryService {
         categoryEntity.setName(categoryDTO.getName());
         categoryEntity = categoryRepository.save(categoryEntity);
         return new CategoryDTO(categoryEntity);
+    }
+
+    @Transactional
+    public CategoryDTO update(UUID uuid, CategoryDTO categoryDTO) {
+        try {
+            Category categoryEntity = categoryRepository.getReferenceById(uuid);
+            copyDtoToEntity(categoryDTO, categoryEntity);
+            categoryEntity = categoryRepository.save(categoryEntity);
+            return new CategoryDTO(categoryEntity);
+        } catch (EntityNotFoundException e) {
+            throw new ResourceNotFoundException("Categoria não encontrada!");
+        }
+    }
+
+    private void copyDtoToEntity(CategoryDTO categoryDTO, Category categoryEntity) {
+        categoryEntity.setName(categoryDTO.getName());
     }
 
     @Transactional
