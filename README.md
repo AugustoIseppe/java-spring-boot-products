@@ -2,7 +2,7 @@
 
 ## 📝 Descrição
 
-🎉 Este projeto consiste em uma API robusta desenvolvida com Spring Boot, projetada para gerenciar produtos e suas respectivas categorias. A aplicação implementa um CRUD completo para ambas as entidades, permitindo criar, ler, atualizar e deletar produtos e categorias, além de gerenciar o relacionamento Muitos-para-Muitos entre eles.
+🎉 API desenvolvida com Spring Boot, projetada para gerenciar produtos e suas respectivas categorias. A aplicação implementa um CRUD completo para ambas as entidades, permitindo criar, ler, atualizar e deletar produtos e categorias, além de gerenciar o relacionamento Muitos-para-Muitos entre eles.
 
 ## ✨ Funcionalidades Principais
 
