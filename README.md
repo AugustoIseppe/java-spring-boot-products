@@ -1,3 +1,10 @@
+![Java](https://img.shields.io/badge/Java-21-orange?logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.4.5-brightgreen?logo=springboot&logoColor=white)
+![Hibernate](https://img.shields.io/badge/Hibernate-ORM-red?logo=hibernate&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15+-blue?logo=postgresql&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-3.9+-C71A36?logo=apachemaven&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
+
 # 🚀 API RESTful de Produtos e Categorias 🛍️
 
 ## 📝 Descrição
